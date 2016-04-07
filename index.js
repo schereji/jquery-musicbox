@@ -9,10 +9,12 @@ $(document).ready( function() {
     };
       
     $("#instrument" ).on('mousedown','.box', function(){
-        //event.stopPropagation();
-        playMusic.apply(this);
+       //disable highlighting
        $("#instrument" ).disableSelection();
+       //onClick() note play
+       playMusic.apply(this);
        $("#instrument" ).on( 'mouseenter','.box', playMusic); 
+        
         //on mouseup, deregister event
         $("body").mouseup(function(){
             $("#instrument" ).off('mouseenter');
@@ -22,24 +24,12 @@ $(document).ready( function() {
 
     function playMusic(){
         var a = $(this).attr('id');
-        var note =  $('#' + a + 'Audio')[0];
-
+        var note = $('#' + a + 'Audio')[0];
+        //note.css('border-color','white');
         // Revert audio back to 0th sec. on additional click
         note.currentTime = 0;
-        
         // This plays the audio file.
         note.play();
     }   
-    
-   	// var bNote = document.getElementById('bAudio');
-
-    // $('#b').mousedown(function(){
-        
-    //     // Revert audio back to 0th sec. on additional click
-    //     bNote.currentTime = 0;
-        
-    //     // This plays the audio file.
-    //     bNote.play();
-    // });  
 
 });
