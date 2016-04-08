@@ -8,13 +8,12 @@ $(document).ready( function() {
                  .on('selectstart', false);
     };
       
-    $("#instrument" ).on('mousedown','.box', function(){
+    $("#instrument" ).on('mousedown keypress','.box', function(){
        //disable highlighting
        $("#instrument" ).disableSelection();
        //onClick() note play
        playMusic.apply(this);
        $("#instrument" ).on( 'mouseenter','.box', playMusic); 
-        
         //on mouseup, deregister event
         $("body").mouseup(function(){
             $("#instrument" ).off('mouseenter');
@@ -30,6 +29,6 @@ $(document).ready( function() {
         note.currentTime = 0;
         // This plays the audio file.
         note.play();
-    }   
+    }
 
 });

@@ -9,56 +9,63 @@
 	</head>
 
 	<body>
+		<audio id="jazz" src="../notes/audio/cmajor.mp3"></audio>
+		<div>
+		  <button onclick="document.getElementById('jazz').play()">Play the Audio</button>
+		  <button onclick="document.getElementById('jazz').pause()">Pause the Audio</button>
+		  <button onclick="document.getElementById('jazz').volume+=0.1">Increase Volume</button>
+		  <button onclick="document.getElementById('jazz').volume-=0.1">Decrease Volume</button>
+		</div>
 		<audio id="cAudio">
-		    <source src= "../notes/music_notes/c_note.mp3" type="audio/mpeg">
-		    <source src= "../notes/music_notes/c_note.ogg" type="audio/ogg">
-		    <source src= "../notes/music_notes/c_note.wav" type="audio/wav">
+		    <source src= "../notes/audio/c_note.mp3" type="audio/mpeg">
+		    <source src= "../notes/audio/c_note.ogg" type="audio/ogg">
+		    <source src= "../notes/audio/c_note.wav" type="audio/wav">
 		</audio>
 
 		<audio id="dAudio">
-		    <source src= "../notes/music_notes/d_note.mp3" type="audio/mpeg">
-		    <source src= "../notes/music_notes/d_note.ogg" type="audio/ogg">
-		    <source src= "../notes/music_notes/d_note.wav" type="audio/wav">
+		    <source src= "../notes/audio/d_note.mp3" type="audio/mpeg">
+		    <source src= "../notes/audio/d_note.ogg" type="audio/ogg">
+		    <source src= "../notes/audio/d_note.wav" type="audio/wav">
 		</audio>
 
 		<audio id="eAudio">
-		    <source src= "../notes/music_notes/e_note.mp3" type="audio/mpeg">
-		    <source src= "../notes/music_notes/e_note.ogg" type="audio/ogg">
-		    <source src= "../notes/music_notes/e_note.wav" type="audio/wav">
+		    <source src= "../notes/audio/e_note.mp3" type="audio/mpeg">
+		    <source src= "../notes/audio/e_note.ogg" type="audio/ogg">
+		    <source src= "../notes/audio/e_note.wav" type="audio/wav">
 		</audio>
 
 		<audio id="fAudio">
-		    <source src= "../notes/music_notes/f_note.mp3" type="audio/mpeg">
-		    <source src= "../notes/music_notes/f_note.ogg" type="audio/ogg">
-		    <source src= "../notes/music_notes/f_note.wav" type="audio/wav">
+		    <source src= "../notes/audio/f_note.mp3" type="audio/mpeg">
+		    <source src= "../notes/audio/f_note.ogg" type="audio/ogg">
+		    <source src= "../notes/audio/f_note.wav" type="audio/wav">
 		</audio>
 
 		<audio id="gAudio">
-		    <source src= "../notes/music_notes/g_note.mp3" type="audio/mpeg">
-		    <source src= "../notes/music_notes/g_note.ogg" type="audio/ogg">
-		    <source src= "../notes/music_notes/g_note.wav" type="audio/wav">
+		    <source src= "../notes/audio/g_note.mp3" type="audio/mpeg">
+		    <source src= "../notes/audio/g_note.ogg" type="audio/ogg">
+		    <source src= "../notes/audio/g_note.wav" type="audio/wav">
 		</audio>
 
 		<audio id="aAudio">
-		    <source src= "../notes/music_notes/a_note.mp3" type="audio/mpeg">
-		    <source src= "../notes/music_notes/a_note.ogg" type="audio/ogg">
-		    <source src= "../notes/music_notes/a_note.wav" type="audio/wav">
+		    <source src= "../notes/audio/a_note.mp3" type="audio/mpeg">
+		    <source src= "../notes/audio/a_note.ogg" type="audio/ogg">
+		    <source src= "../notes/audio/a_note.wav" type="audio/wav">
 		</audio>
 
 		<audio id="bAudio">
-		    <source src= "../notes/music_notes/b_note.mp3" type="audio/mpeg">
-		    <source src= "../notes/music_notes/b_note.ogg" type="audio/ogg">
-		    <source src= "../notes/music_notes/b_note.wav" type="audio/wav">   
+		    <source src= "../notes/audio/b_note.mp3" type="audio/mpeg">
+		    <source src= "../notes/audio/b_note.ogg" type="audio/ogg">
+		    <source src= "../notes/audio/b_note.wav" type="audio/wav">   
 		</audio>
 
 		<div id="instrument">
-			<div id="c" class="box">C</div>
-			<div id="d" class="box">D</div>
-			<div id="e" class="box">E</div>
-			<div id="f" class="box">F</div>
-			<div id="g" class="box">G</div>
-			<div id="a" class="box">A</div>
-			<div id="b" class="box">B</div>
+			<div id="c" class="box" tabindex="1" >C</div>
+			<div id="d" class="box" tabindex="2">D</div>
+			<div id="e" class="box" tabindex="3">E</div>
+			<div id="f" class="box" tabindex="4">F</div>
+			<div id="g" class="box" tabindex="5">G</div>
+			<div id="a" class="box" tabindex="6">A</div>
+			<div id="b" class="box" tabindex="7">B</div>
 		</div>
 
 
